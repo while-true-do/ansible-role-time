@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-time.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-time)
+
 # Ansible Role: time
 | A role that sets the timezone.
 
