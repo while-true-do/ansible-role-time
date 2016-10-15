@@ -23,7 +23,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
   # Link github repo to ansible-galaxy name
-  - ln -s  $PWD ../while-true-do.time/
+  - ln -s  $PWD ../while-true-do.time
 
 # Run the tests
 script:
