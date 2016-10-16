@@ -1,7 +1,7 @@
 ---
 # FIXME: No ansible fact present for current timezone in a valid format.
 - name: Fetch timezone facts
-  shell: timedatectl status | grep 'Time zone' | grep '{{ time_timezone }}'
+  shell: timedatectl status | grep "Time zone" | grep "{{ time_timezone }}"
   ignore_errors: yes
   register: timezone_status
   changed_when: timezone_status.rc != 0
@@ -11,7 +11,7 @@
     - time
 
 - name: Set timezone
-  command: timedatectl set-timezone '{{ time_timezone }}'
+  command: timedatectl set-timezone "{{ time_timezone }}"
   when: timezone_status.rc == 1
   tags:
     - config
