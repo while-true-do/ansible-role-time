@@ -1,61 +1,72 @@
 [![Build Status](https://travis-ci.org/while-true-do/ansible-role-time.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-time)
 
-# Ansible Role: time
+# Ansible Role: Time
 | A role that sets the timezone.
 
-## Installation
+## Motivation
+Setting the correct timezone is needed on every computer system.
 
-Galaxy Link: <https://galaxy.ansible.com/while-true-do/time>
+## Installation
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do.time)
 
 ```
 ansible-galaxy install while-true-do.time
 ```
 
-Github Link: <https://github.com/while-true-do/ansible-role-time>
+Install from [Github](https://github.com/while-true-do/ansible-role-time)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-time while-true-do.time
+git clone https://github.com/while-true-do/ansible-role-time.git while-true-do.time
 ```
 
 ## Requirements
 
-None.
+**Used Modules**
+
+-   [timezone_module](http://docs.ansible.com/ansible/latest/timezone_module.html)
+
+## Role Variables
+```yaml
+# defaults/main.yml
+wtd_time_timezone: "Europe/London"
+```
 
 ## Dependencies
 
 None.
 
-## Role Variables
-
-```
-# defaults/main.yml
-time_timezone: 'Europe/London'
-```
-
 ## Example Playbook
-
 Simple Example:
 
-```
-- hosts: servers
+```yaml
+- hosts: servers 
   roles:
     - { role: while-true-do.time }
 ```
 
-## License
+Advanced Example:
 
-This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-3-Clause).
+```yaml
+- hosts: servers 
+  roles:
+    - { role: while-true-do.time, wtd_time_timezone: "Europe/Berlin" }
+```
 
 ## Contribute / Bugs
 
-**bug reports:** <https://github.com/while-true-do/ansible-role-time/issues>
+Thank you so much for considering to contribute. Every contribution helps us.
+We are really happy, when somebody is joining the hard work. Please have a look 
+at the links first.
 
-**contributers:** <https://github.com/while-true-do/ansible-role-time/graphs/contributors>
+-   [Contribution Guidelines](./docs/CONTRIBUTING.md)
+-   [Create an issue or Request](https://github.com/while-true-do/ansible-role-time/issues)
+-   [See who was contributing already](https://github.com/while-true-do/ansible-role-time/graphs/contributors)
+
+## License
+This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Author Information
 
-**blog:** <https://blog.while-true-do.org>
+Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
 
-**github:** <https://github.com/daniel-wtd>
-
-**contact:** [mail@while-true-do.org](mailto:mail@while-true-do.org)
+Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)
