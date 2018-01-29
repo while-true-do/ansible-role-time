@@ -1,2 +1,4 @@
 ---
 wtd_time_timezone: "Europe/London"
+
+wtd_time_daemon: "chrony"
