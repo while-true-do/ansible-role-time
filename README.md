@@ -29,11 +29,13 @@ git clone https://github.com/while-true-do/ansible-role-time.git while-true-do.t
 ```yaml
 # defaults/main.yml
 wtd_time_timezone: "Europe/London"
+
+wtd_time_daemon: "chrony"
 ```
 
 ## Dependencies
 
-None.
+-   [ansible-role-chrony](https://github.com/while-true-do/ansible-role-chrony)
 
 ## Example Playbook
 Simple Example:
