@@ -1,4 +1,5 @@
-dependencies: []
+dependencies:
+ - { role: while-true-do.chrony, when: wtd_time_daemon == "chrony" }
 
 galaxy_info:
   author: while-true-do.org
