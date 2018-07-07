@@ -7,16 +7,16 @@
 Setting the correct timezone is needed on every computer system.
 
 ## Installation
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do.time)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.time)
 
 ```
-ansible-galaxy install while-true-do.time
+ansible-galaxy install while_true_do.time
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-time)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-time.git while-true-do.time
+git clone https://github.com/while-true-do/ansible-role-time.git while_true_do.time
 ```
 
 ## Requirements
@@ -43,7 +43,7 @@ Simple Example:
 ```yaml
 - hosts: servers 
   roles:
-    - { role: while-true-do.time }
+    - { role: while_true_do.time }
 ```
 
 Advanced Example:
@@ -51,7 +51,7 @@ Advanced Example:
 ```yaml
 - hosts: servers 
   roles:
-    - { role: while-true-do.time, wtd_time_timezone: "Europe/Berlin" }
+    - { role: while_true_do.time, wtd_time_timezone: "Europe/Berlin" }
 ```
 
 ## Contribute / Bugs
