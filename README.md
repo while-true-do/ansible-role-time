@@ -41,7 +41,7 @@ wtd_time_daemon: "chrony"
 Simple Example:
 
 ```yaml
-- hosts: servers 
+- hosts: servers
   roles:
     - { role: while_true_do.time }
 ```
@@ -49,7 +49,7 @@ Simple Example:
 Advanced Example:
 
 ```yaml
-- hosts: servers 
+- hosts: servers
   roles:
     - { role: while_true_do.time, wtd_time_timezone: "Europe/Berlin" }
 ```
@@ -57,7 +57,7 @@ Advanced Example:
 ## Contribute / Bugs
 
 Thank you so much for considering to contribute. Every contribution helps us.
-We are really happy, when somebody is joining the hard work. Please have a look 
+We are really happy, when somebody is joining the hard work. Please have a look
 at the links first.
 
 -   [Contribution Guidelines](./docs/CONTRIBUTING.md)
