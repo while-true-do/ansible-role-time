@@ -1,12 +1,12 @@
 dependencies:
- - { role: while-true-do.chrony, when: wtd_time_daemon == "chrony" }
+ - { role: while_true_do.chrony, when: wtd_time_daemon == "chrony" }
 
 galaxy_info:
+  role_name: time
   author: while-true-do.org
   description: A role that sets the timezone.
   company: while-true-do.org
 
-  issue_tracker_url: https://github.com/while-true-do/ansible-role-time/issues
   github_branch: master
   license: BSD
 
